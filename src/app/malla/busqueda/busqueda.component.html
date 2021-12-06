@@ -1,0 +1,8 @@
+<div class="row">
+    <div class="col">
+        <select name="miselect" [(ngModel)]="seleccionado">
+            <option [value]="item.valor" *ngFor="let item of lista">{{item.descripcion}}</option>
+        </select>
+        <button class="btn btn-sm"(click)="buscar()">Buscar</button>            
+    </div>
+</div>
